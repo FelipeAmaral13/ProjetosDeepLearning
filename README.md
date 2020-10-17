@@ -12,3 +12,5 @@
 8. Activity Recognition
 9. Facial Recognition
 10. Depth Estimation
+11. Emotion Detector
+
