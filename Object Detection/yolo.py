@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-cap = cv.VideoCapture('1.mp4')
+cap = cv.VideoCapture('2.mp4')
 whT = 320
 confThreshold = 0.3
 nmsThreshold = 0.4
