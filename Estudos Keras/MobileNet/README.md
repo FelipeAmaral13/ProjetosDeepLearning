@@ -1,0 +1,3 @@
+# MobileNet
+
+Mobilenet é um modelo de deeplearning que realiza as mesmas convoluções que uma CNN normal. Seu diferencial é o uso da ideia de convolução de profundidade e convolução de ponto, que é diferente da convolução normal feita por CNNs normais. Isso aumenta a eficiência da CNN para prever imagens e, portanto, eles também podem competir nos sistemas móveis. Uma vez que essas formas de convolução reduzem muito o tempo de comparação e reconhecimento, proporcionam uma melhor resposta em um tempo muito curto e, portanto, as estamos utilizando como nosso modelo de reconhecimento de imagem.
