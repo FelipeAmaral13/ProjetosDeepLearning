@@ -1,0 +1,8 @@
+/Dataset/*
+/Include
+/Lib
+/Scripts
+/share
+pyvenv.cfg
+/model_cnn/*
+best_model.h5
