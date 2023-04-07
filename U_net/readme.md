@@ -22,4 +22,4 @@ A classe SegmentationUnet implementa o modelo UNet e oferece métodos para carre
 
 # Autor
 
-Esse projeto foi desenvolvido por Nome do Autor.
+Esse projeto foi desenvolvido por Felipe Meganha.
