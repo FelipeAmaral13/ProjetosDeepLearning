@@ -9,14 +9,39 @@ Uma rede neural, chamada de gerador, gera novas instâncias de dados, enquanto a
 
 ![](https://www.deeplearningbook.com.br/wp-content/uploads/2019/09/gan_schema.png)
 
-Digamos que estamos tentando fazer algo mais banal do que imitar a Mona Lisa. Geraremos números escritos à mão, como os encontrados no conjunto de dados MNIST, retirado do mundo real. O objetivo do discriminador, quando mostrada uma instância do verdadeiro conjunto de dados MNIST, é reconhecer aqueles que são autênticos.
+# Instalação
 
-Enquanto isso, o gerador está criando novas imagens sintéticas que são transmitidas ao discriminador. O gerador gera as imagens fake na esperança de que elas também sejam consideradas autênticas, mesmo sendo falsas. O objetivo do gerador é gerar dígitos manuscritos cada vez melhores. O objetivo do discriminador é identificar imagens falsas do gerador. Ou seja, são duas redes adversárias, uma discriminativa (padrão que já estudamos até aqui no livro) e uma generativa que, em termos gerais, faz o oposto das redes discriminativas.
+## Clone the repository:
 
-Aqui estão as etapas de uma GAN:
+`git clone <repository-url>`
 
-    * O gerador considera números aleatórios e retorna uma imagem.
-    * Essa imagem gerada é inserida no discriminador ao lado de um fluxo de imagens tiradas do conjunto de dados real e verdadeiro.
-    * O discriminador obtém imagens reais e falsas e retorna probabilidades, um número entre 0 e 1, com 1 representando uma previsão de imagem autêntica e 0 representando previsão de imagens falsas (geradas pela rede generativa).
+## Instalar as dependencias:
 
-![Fonte](https://www.deeplearningbook.com.br/introducao-as-redes-adversarias-generativas-gans-generative-adversarial-networks/)
+`pip install -r requirements.txt`
+
+# Dataset:
+
+https://www.kaggle.com/datasets/jessicali9530/celeba-dataset
+
+## Uso
+
+* Importe os módulos necessários e defina a classe FaceGan.
+
+* Inicialize o objeto FaceGan. Isso configurará a semente aleatória, o dispositivo, o conjunto de dados, o carregador de dados e o registrador.
+
+* Carregue o conjunto de dados e crie um carregador de dados usando o método load_dataset.
+
+* Plote uma grade de imagens reais de treinamento usando o método plot_samples.
+
+* Carregue os modelos gerador e discriminador e inicialize seus pesos usando o método load_models.
+
+* Treine o modelo FaceGAN usando o método train_model. Esse método retorna listas de perdas do gerador e do discriminador, bem como uma lista de imagens geradas em intervalos específicos.
+
+* Salve os modelos gerador e discriminador usando o método save_models.
+
+* Carregue o modelo gerador a partir de um ponto de verificação salvo e gere amostras usando o método load_generator_model.
+
+* Avalie o processo de treinamento exibindo as perdas do gerador e do discriminador durante o treinamento, além das imagens reais e falsas usando o método evaluate.
+
+![erro_g_d](https://github.com/FelipeAmaral13/ProjetosDeepLearning/assets/5797933/4c03e64b-b964-41fa-8092-9bf098dd3fd6)
+![evaluate](https://github.com/FelipeAmaral13/ProjetosDeepLearning/assets/5797933/88ea72e4-d9ae-48ec-8d9a-ee5c55c758d1)
