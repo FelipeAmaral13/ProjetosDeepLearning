@@ -25,13 +25,12 @@ class FaceGan:
         torch.manual_seed(manualSeed)
         self.ngpu = 1
         self.device = torch.device("cuda:0" if (torch.cuda.is_available() and self.ngpu > 0) else "cpu")
-        self.dataroot = os.path.join("Cap10", "dados", "celeba")
+        self.dataroot = os.path.join("dados", "celeba")
         self.image_size = 64
         self.dataset = None
         self.dataloader = None
         self.real_batch = None
         self.load_dataset()
-        self.plot_samples()
         self.model_gan = ModelGan(self.ngpu)
         self.logger = self._setup_logger()
     
@@ -73,6 +72,7 @@ class FaceGan:
             num_workers=2
         )
         self.real_batch = next(iter(self.dataloader))
+        self.plot_samples()
 
     def plot_samples(self):
         """
