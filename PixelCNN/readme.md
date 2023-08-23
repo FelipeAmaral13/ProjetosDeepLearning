@@ -56,7 +56,7 @@ Esta implementação é inspirada no modelo PixelCNN original proposto no artigo
 
 ## Autor
 
-[Seu Nome]
+Felipe Meganha
 
 ## Licença
 
