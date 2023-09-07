@@ -16,6 +16,11 @@ O projeto está organizado da seguinte forma:
 
 5. **`static/uploads`**: Esta pasta é usada para armazenar temporariamente as imagens enviadas pelos usuários para classificação.
 
+## Dataset
+
+O dataset usado para esse projeto foi:
+[https://www.kaggle.com/datasets/nandanp6/cataract-image-dataset](https://www.kaggle.com/datasets/nandanp6/cataract-image-dataset)
+
 ## Como Usar
 
 ### Treinamento do Modelo
