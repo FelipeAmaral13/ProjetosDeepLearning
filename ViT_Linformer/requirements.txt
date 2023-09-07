@@ -1,0 +1,11 @@
+torch
+Pillow==9.5.0
+tqdm==4.65.0
+numpy==1.23.5
+linformer==0.2.1
+vit-pytorch==1.4.4
+torchvision==0.15.2
+matplotlib==3.7.1
+seaborn==0.11.2
+scikit-learn==1.2.2
+flask==2.3.3

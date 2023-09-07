@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detecção de Catarata Ocular</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            border: 2px solid #007BFF; 
+            padding: 20px; 
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        img {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        p.label {
+            font-size: 24px; 
+            font-weight: bold; 
+            text-decoration: underline; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Detecção de Catarata Ocular</h1>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required><br><br>
+            <button type="submit">Enviar Imagem</button>
+        </form>
+        {% if image_path %}
+        <h2>Resultado da Detecção:</h2>
+        <p class="label">{{ label }}</p>
+        <img src="{{ image_path }}" width="400" height="400">
+        {% endif %}
+    </div>
+</body>
+</html>
