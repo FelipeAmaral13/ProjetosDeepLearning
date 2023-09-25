@@ -16,6 +16,11 @@ O projeto está organizado da seguinte forma:
 
 5. **`static/uploads`**: Esta pasta é usada para armazenar temporariamente as imagens enviadas pelos usuários para classificação.
 
+## Dataset
+
+O dataset usado para esse projeto foi:
+[https://www.kaggle.com/datasets/nandanp6/cataract-image-dataset](https://www.kaggle.com/datasets/nandanp6/cataract-image-dataset)
+
 ## Como Usar
 
 ### Treinamento do Modelo
@@ -90,4 +95,4 @@ Além disso, é recomendável ter uma GPU disponível para treinamento mais ráp
 
 ## Créditos
 
-O modelo Vision Transformer (ViT) usado neste projeto é baseado na implementação de [linformer](https://github.com/tatp22/linformer) e [vit-pytorch](https://github.com/lucidrains/vit-pytorch). Este projeto foi criado por [Seu Nome] e é fornecido sob a licença [MIT](LICENSE).
+O modelo Vision Transformer (ViT) usado neste projeto é baseado na implementação de [linformer](https://github.com/tatp22/linformer) e [vit-pytorch](https://github.com/lucidrains/vit-pytorch). Este projeto foi criado por Felipe Meganha e é fornecido sob a licença [MIT](LICENSE).
