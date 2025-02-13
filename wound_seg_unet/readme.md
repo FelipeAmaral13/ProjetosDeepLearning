@@ -78,3 +78,11 @@ python train.py
 
 O modelo U-Net será treinado e salvo na pasta `checkpoints/`.
 
+Métricas de avaliação do treinamento do modelo:
+
+![Image](https://github.com/user-attachments/assets/0eb4f12a-e030-4e5e-8b40-12500d9b43f4)
+
+Exemplo de segmentação na inferência do modelo:
+
+![Image](https://github.com/user-attachments/assets/581d6c81-798f-41de-8bed-16c905fdc9f0)
+
